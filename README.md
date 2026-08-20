@@ -18,7 +18,7 @@ DNS = <b>(KOSONGKAN_GPP)</b><br><br>
 
 [Peer]<br>
 PublicKey = <b>(PUBLIC_KEY_VPS)</b><br>
-Endpoint = <b>(IP_PUBLIC_VPS):<PORT></b><br>
+Endpoint = <b>(IP_PUBLIC_VPS):(PORT)</b><br>
 AllowedIPs = 172.16.250.0/24, (IP_POOL_PPPOE), (IP_POOL_HOTSPOT)<br>
 PersistentKeepalive = 30<br>
 
