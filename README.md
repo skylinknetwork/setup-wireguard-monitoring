@@ -11,7 +11,7 @@
 > [!CAUTION]
 > ## Setup WireGuard di Android
 [Interface]<br>
-PrivateKey = <OTOMATIS TERISI><br>
+PrivateKey = <OTOMATIS_TERISI><br>
 Address = 172.16.250.3/24<br>
 DNS = <KOSONGKAN_GPP><br><br>
 
