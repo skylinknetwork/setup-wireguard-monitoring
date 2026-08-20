@@ -1,15 +1,12 @@
-> [!CAUTION]
-> ## Buat Interface WireGuard di Mikrotik VPS
+![Static Badge](https://img.shields.io/badge/Buat%20Interface%20WireGuard%20di%20Mikrotik%20VPS-%23FF0000?style=flat-square)<br>
 /interface wireguard add listen-port=64221 name=wg-server;<br>
 /ip address add address=172.16.250.1/24 interface=wg-server;<br>
-<img width="50%" src="https://github.com/user-attachments/assets/fe8c5b98-e406-45db-abad-d8c057bd4c7e" /><br>
-> [!CAUTION]
-> ## Buat Interface WireGuard di Mikrotik Rumah
+
+### Buat Interface WireGuard di Mikrotik Rumah
 /interface wireguard add listen-port=51820 name=wg-home;<br>
 /ip address add address=172.16.250.2/24 interface=wg-home;<br>
 
-> [!CAUTION]
-> ## Setup WireGuard di Android
+## Setup WireGuard di Android
 [Interface]<br>
 PrivateKey = <b>(Klik icon panah memutar di sebelah kanan)</b><br>
 PublicKey = <b>(OTOMATIS TERISI)</b><br>
