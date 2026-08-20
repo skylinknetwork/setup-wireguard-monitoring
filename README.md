@@ -10,16 +10,16 @@
 
 > [!CAUTION]
 > ## Setup WireGuard di Android
-[Interface]
-PrivateKey = <OTOMATIS TERISI>
-Address = 172.16.250.3/24
-DNS = <KOSONGKAN_GPP>
+[Interface]<br>
+PrivateKey = <OTOMATIS TERISI><br>
+Address = 172.16.250.3/24<br>
+DNS = <KOSONGKAN_GPP><br><br>
 
-[Peer]
-PublicKey = <PUBLIC_KEY_VPS>
-Endpoint = <IP_PUBLIC_VPS>:<PORT>
-AllowedIPs = 172.16.250.0/24, <IP_POOL_PPPOE>, <IP_POOL_HOTSPOT>
-PersistentKeepalive = 30
+[Peer]<br>
+PublicKey = <PUBLIC_KEY_VPS><br>
+Endpoint = <IP_PUBLIC_VPS>:<PORT><br>
+AllowedIPs = 172.16.250.0/24, <IP_POOL_PPPOE>, <IP_POOL_HOTSPOT><br>
+PersistentKeepalive = 30<br>
 
 ## Tambahkan Peer menuju Mikrotik Rumah di VPS<br>(Masukkan Kode ini di Mikrotik VPS)
 /interface wireguard peers add interface=wg-server name=wg-peer-home allowed-address=172.16.250.0/24,<IP_POOL_PPPOE>,<IP_POOL_HOTSPOT> public-key="<PUBLIC_KEY_MIKROTIK_RUMAH>"
