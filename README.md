@@ -2,11 +2,11 @@
 /interface wireguard add listen-port=64221 name=wg-server;<br>
 /ip address add address=172.16.250.1/24 interface=wg-server;<br>
 
-### Buat Interface WireGuard di Mikrotik Rumah
+![Static Badge](https://img.shields.io/badge/Buat%20Interface%20WireGuard%20di%20Mikrotik%20Rumah-%23FF0000?style=flat-square)<br>
 /interface wireguard add listen-port=51820 name=wg-home;<br>
 /ip address add address=172.16.250.2/24 interface=wg-home;<br>
 
-## Setup WireGuard di Android
+![Static Badge](https://img.shields.io/badge/Setup%20WireGuard%20di%20Android-%23FF0000?style=flat-square)<br>
 [Interface]<br>
 PrivateKey = <b>(Klik icon panah memutar di sebelah kanan)</b><br>
 PublicKey = <b>(OTOMATIS TERISI)</b><br>
