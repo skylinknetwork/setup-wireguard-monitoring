@@ -42,6 +42,6 @@ PersistentKeepalive = 30
 > [!CAUTION]
 > Ini bahaya/peringatan keras (otomatis warna **merah**).
 >
-> ![Badge Merah](https://img.shields.io/badge/Teks_Kamu-Merah-Abang-red)
+> ![Badge Merah](test)
 ![Badge Biru](https://img.shields.io/badge/Status-Aktif-brightgreen)
 ![Badge Ungu](https://img.shields.io/badge/Versi-1.0.0-purple)
