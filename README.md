@@ -1,12 +1,12 @@
-### Buat Interface Wireguard baru di VPS
+### Buat Interface WireGuard di Mikrotik VPS
 /interface wireguard add listen-port=13210 name=wg-server;<br>
 /ip address add address=172.16.250.1/24 interface=wg-server;<br>
 
-### Buat Interface WireGuard & pasang IP
+### Buat Interface WireGuard di Mikrotik Rumah
 /interface wireguard add listen-port=51820 name=wg-home;<br>
 /ip address add address=172.16.250.2/24 interface=wg-home;<br>
 
-# Tambahkan Peer di VPS Server untuk Mikrotik X86-Home
+### Tambahkan Peer menuju Mikrotik Rumah di VPS<br>(Masukkan Kode ini di Mikrotik VPS)
 /interface wireguard peers add interface=wg-server name=wg-peer-home allowed-address=172.16.250.2/32,10.10.0.0/16,10.20.20.0/24 public-key="<PUBLIC_KEY_HOME>"
 
 # Tambahkan Peer di VPS Server untuk Samsung S25FE
