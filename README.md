@@ -1,7 +1,7 @@
 ### Buat Interface Wireguard baru di VPS
 {<br>
-/interface wireguard add listen-port=13210 name=wg-server
-/ip address add address=172.16.250.1/24 interface=wg-server
+/interface wireguard add listen-port=13210 name=wg-server;<br>
+/ip address add address=172.16.250.1/24 interface=wg-server;<br>
 }
 
 # Buat Interface WireGuard & pasang IP
