@@ -1,12 +1,12 @@
-![Static Badge](https://img.shields.io/badge/Buat%20Interface%20WireGuard%20di%20Mikrotik%20VPS-%23FF0000?style=flat-square)<br>
+![Static Badge](https://img.shields.io/badge/01.%20Buat%20Interface%20WireGuard%20baru%20di%20VPS-%230059FF?style=plastic)<br>
 /interface wireguard add listen-port=64221 name=wg-server;<br>
 /ip address add address=172.16.250.1/24 interface=wg-server;<br>
 
-![Static Badge](https://img.shields.io/badge/Buat%20Interface%20WireGuard%20di%20Mikrotik%20Rumah-%23FF0000?style=flat-square)<br>
+![Static Badge](https://img.shields.io/badge/02.%20Buat%20Interface%20WireGuard%20di%20Mikrotik%20Rumah-%230059FF?style=plastic)<br>
 /interface wireguard add listen-port=51820 name=wg-home;<br>
 /ip address add address=172.16.250.2/24 interface=wg-home;<br>
 
-![Static Badge](https://img.shields.io/badge/Setup%20WireGuard%20di%20Android-%23FF0000?style=flat-square)<br>
+![Static Badge](https://img.shields.io/badge/Setup%20WireGuard%20di%20Android-%230059FF?style=flat-square)<br>
 [Interface]<br>
 PrivateKey = <b>(Klik icon panah memutar di sebelah kanan)</b><br>
 PublicKey = <b>(OTOMATIS TERISI)</b><br>
@@ -19,8 +19,8 @@ Endpoint = <b>(IP_PUBLIC_VPS):(PORT)</b><br>
 AllowedIPs = <b>172.16.250.0/24, (IP_POOL_PPPOE), (IP_POOL_HOTSPOT)</b><br>
 PersistentKeepalive = 30<br>
 
-![Static Badge](https://img.shields.io/badge/Tambahkan%20Peer%20menuju%20Mikrotik%20Rumah%20di%20VPS-%23FF0000?style=flat-square)<br>
-![Static Badge](https://img.shields.io/badge/(Masukkan%20Kode%20ini%20di%20Mikrotik%20VPS)-%230054D1?style=flat-square)<br>
+![Static Badge](https://img.shields.io/badge/Tambahkan%20Peer%20menuju%20Mikrotik%20Rumah%20di%20VPS-%230059FF?style=flat-square)<br>
+![Static Badge](https://img.shields.io/badge/(Masukkan%20Kode%20ini%20di%20Mikrotik%20VPS)-%23FF9900?style=flat-square)<br>
 /interface wireguard peers add interface=wg-server name=wg-peer-home allowed-address=172.16.250.0/24,<IP_POOL_PPPOE>,<IP_POOL_HOTSPOT> public-key="<PUBLIC_KEY_MIKROTIK_RUMAH>"
 
 ## Tambahkan Peer menuju HP Android di VPS<br>(Masukkan Kode ini di Mikrotik VPS)
