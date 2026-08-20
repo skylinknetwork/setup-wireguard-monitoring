@@ -3,11 +3,13 @@
 /interface wireguard add listen-port=13210 name=wg-server;<br>
 /ip address add address=172.16.250.1/24 interface=wg-server;<br>
 
-## Buat Interface WireGuard di Mikrotik Rumah
+> [!CAUTION]
+> ## Buat Interface WireGuard di Mikrotik Rumah
 /interface wireguard add listen-port=51820 name=wg-home;<br>
 /ip address add address=172.16.250.2/24 interface=wg-home;<br>
 
-## Setup WireGuard di Android
+> [!CAUTION]
+> ## Setup WireGuard di Android
 [Interface]
 PrivateKey = <OTOMATIS TERISI>
 Address = 172.16.250.3/24
