@@ -29,3 +29,19 @@ PersistentKeepalive = 30
 
 > [!NOTE]
 > Ini catatan penting (otomatis warna **biru**).
+
+> [!TIP]
+> Ini tips keren (otomatis warna **hijau**).
+
+> [!IMPORTANT]
+> Ini info penting banget (otomatis warna **ungu**).
+
+> [!WARNING]
+> Ini peringatan (otomatis warna **kuning**).
+
+> [!CAUTION]
+> Ini bahaya/peringatan keras (otomatis warna **merah**).
+>
+> ![Badge Merah](https://img.shields.io/badge/Teks_Kamu-Merah-red)
+![Badge Biru](https://img.shields.io/badge/Status-Aktif-brightgreen)
+![Badge Ungu](https://img.shields.io/badge/Versi-1.0.0-purple)
