@@ -42,6 +42,9 @@ PersistentKeepalive = 30
 > [!CAUTION]
 > Ini bahaya/peringatan keras (otomatis warna **merah**).
 >
-> ![Badge Merah](test)
-![Badge Biru](https://img.shields.io/badge/Status-Aktif-brightgreen)
-![Badge Ungu](https://img.shields.io/badge/Versi-1.0.0-purple)
+```ansi
+\u001b[31mIni teks warna merah\u001b[0m
+\u001b[32mIni teks warna hijau\u001b[0m
+\u001b[33mIni teks warna kuning\u001b[0m
+\u001b[34mIni teks warna biru\u001b[0m
+```
