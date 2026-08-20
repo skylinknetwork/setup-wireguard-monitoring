@@ -16,7 +16,7 @@ DNS = <b>(KOSONGKAN_GPP)</b><br>
 [Peer]<br>
 PublicKey = <b>(PUBLIC_KEY_VPS)</b><br>
 Endpoint = <b>(IP_PUBLIC_VPS):(PORT)</b><br>
-AllowedIPs = 172.16.250.0/24, (IP_POOL_PPPOE), (IP_POOL_HOTSPOT)<br>
+AllowedIPs = <b>172.16.250.0/24, (IP_POOL_PPPOE), (IP_POOL_HOTSPOT)</b><br>
 PersistentKeepalive = 30<br>
 
 ![Static Badge](https://img.shields.io/badge/Tambahkan%20Peer%20menuju%20Mikrotik%20Rumah%20di%20VPS-%23FF0000?style=flat-square)<br>
