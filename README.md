@@ -2,7 +2,7 @@
 > ## Buat Interface WireGuard di Mikrotik VPS
 /interface wireguard add listen-port=13210 name=wg-server;<br>
 /ip address add address=172.16.250.1/24 interface=wg-server;<br>
-
+<img width="50%" src="https://github.com/user-attachments/assets/fe8c5b98-e406-45db-abad-d8c057bd4c7e" /><br>
 > [!CAUTION]
 > ## Buat Interface WireGuard di Mikrotik Rumah
 /interface wireguard add listen-port=51820 name=wg-home;<br>
