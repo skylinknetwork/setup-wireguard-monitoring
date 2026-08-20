@@ -19,10 +19,13 @@ AllowedIPs = 172.16.250.0/24, <IP_POOL_PPPOE>, <IP_POOL_HOTSPOT>
 PersistentKeepalive = 30
 
 ## Tambahkan Peer menuju Mikrotik Rumah di VPS<br>(Masukkan Kode ini di Mikrotik VPS)
-/interface wireguard peers add interface=wg-server name=wg-peer-home allowed-address=172.16.250.0/24,<IP_POOLPPPOE>,<IP_POOL_HOTSPOT> public-key="<PUBLIC_KEY_MIKROTIK_RUMAH>"
+/interface wireguard peers add interface=wg-server name=wg-peer-home allowed-address=172.16.250.0/24,<IP_POOL_PPPOE>,<IP_POOL_HOTSPOT> public-key="<PUBLIC_KEY_MIKROTIK_RUMAH>"
+
+## Tambahkan Peer menuju HP Android di VPS<br>(Masukkan Kode ini di Mikrotik VPS)
+/interface wireguard peers add interface=wg-server name=wg-peer-hp allowed-address=172.16.250.0/24,<IP_POOL_PPPOE>,<IP_POOL_HOTSPOT> public-key="<PUBLIC_KEY_HP_ANDROID>"
 
 ## Buat NAT Masquerade di Mikrotik Rumah untuk monitoring CLIENT
-/ip firewall nat add action=masquerade chain=srcnat comment="Masquerade Wireguard ke Client" dst-address-list=IP-CLIENT src-address=172.16.250.0/24
+/ip firewall nat add action=masquerade chain=srcnat comment="Masquerade Wireguard ke Client" out-interface=wg-home
 
 > [!NOTE]
 > Ini catatan penting (otomatis warna **biru**).
