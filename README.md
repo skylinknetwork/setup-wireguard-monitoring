@@ -11,7 +11,7 @@
 PrivateKey = <b>(Klik icon panah memutar di sebelah kanan)</b><br>
 PublicKey = <b>(OTOMATIS TERISI)</b><br>
 Address = 172.16.250.3/24<br>
-DNS = <b>(KOSONGKAN_GPP)</b><br><br>
+DNS = <b>(KOSONGKAN_GPP)</b><br>
 
 [Peer]<br>
 PublicKey = <b>(PUBLIC_KEY_VPS)</b><br>
@@ -19,7 +19,8 @@ Endpoint = <b>(IP_PUBLIC_VPS):(PORT)</b><br>
 AllowedIPs = 172.16.250.0/24, (IP_POOL_PPPOE), (IP_POOL_HOTSPOT)<br>
 PersistentKeepalive = 30<br>
 
-## Tambahkan Peer menuju Mikrotik Rumah di VPS<br>(Masukkan Kode ini di Mikrotik VPS)
+![Static Badge](https://img.shields.io/badge/Tambahkan%20Peer%20menuju%20Mikrotik%20Rumah%20di%20VPS-%23FF0000?style=flat-square)<br>
+![Static Badge](https://img.shields.io/badge/(Masukkan%20Kode%20ini%20di%20Mikrotik%20VPS)-%230054D1?style=flat-square)<br>
 /interface wireguard peers add interface=wg-server name=wg-peer-home allowed-address=172.16.250.0/24,<IP_POOL_PPPOE>,<IP_POOL_HOTSPOT> public-key="<PUBLIC_KEY_MIKROTIK_RUMAH>"
 
 ## Tambahkan Peer menuju HP Android di VPS<br>(Masukkan Kode ini di Mikrotik VPS)
