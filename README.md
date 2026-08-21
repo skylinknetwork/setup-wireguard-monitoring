@@ -1,7 +1,9 @@
 ![Static Badge](https://img.shields.io/badge/01.%20Buat%20Interface%20WireGuard%20baru%20di%20VPS-%230059FF?style=plastic)<br>
 ```Buat Interface WireGuard Mikrotik VPS
+{
 /interface wireguard add listen-port=51820 name=wg-server;
 /ip address add address=172.16.250.1/24 interface=wg-server;
+}
 ```
 - Buat interface WireGuard baru di Mikrotik VPS
 - Tambah IP untuk interface wg-server
@@ -9,9 +11,11 @@
 
 ![Static Badge](https://img.shields.io/badge/02.%20Buat%20Interface%20WireGuard%20di%20Mikrotik%20Rumah-%230059FF?style=plastic)
 ```Buat Interface WireGuard Mikrotik Rumah
+{
 /interface wireguard add listen-port=51820 name=wg-home;
 /ip address add address=172.16.250.2/24 interface=wg-home;
 /ip fi nat add cha=srcnat out-interface=wg-home act=masq;
+}
 ```
 - Buat interface WireGuard baru di Mikrotik Rumah
 - Tambah IP untuk interface wg-home
@@ -61,5 +65,24 @@ PersistentKeepalive = 30
 <br>
 <br>
 
-## Buat NAT Masquerade di Mikrotik Rumah untuk monitoring CLIENT
-/ip firewall nat add action=masquerade chain=srcnat comment="Masquerade Wireguard ke Client" out-interface=wg-home
+![Static Badge](https://img.shields.io/badge/06.%20Buat%20NAT%20Masquerade%20di%20Mikrotik%20Rumah-%230059FF?style=plastic)<br>
+```
+{
+/ip firewall nat add action=masquerade chain=srcnat \
+   out-interface=wg-home
+}
+```
+<br>
+
+![Static Badge](https://img.shields.io/badge/07.%20Tambahkan%20peer%20menuju%20VPS%20di%20Mikrotik%20Rumah-%230059FF?style=plastic)<br>
+```
+{
+/interface wireguard peer add name=peer-vps interface=wg-home \
+   public-key="PUBLIC_KEY_VPS" endpoint-addr=(IP_PUBLIK_VPS) \
+   endpoint-port=51820 allowed-address=172.16.251.0/24 persistent=20
+}
+```
+<br>
+![Static Badge](https://img.shields.io/badge/Catatan-%23D10000?style=flat-square)<br>
+![Static Badge](https://img.shields.io/badge/Rubah%20PUBLIC_KEY%20_VPS%20dengan%20Public%20Key%20diambil%20dari%20WireGuard%20VPS-%23D17300?style=flat-square)<br>
+<br>
