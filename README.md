@@ -7,7 +7,8 @@
 ```
 - Buat interface WireGuard baru di Mikrotik VPS
 - Tambah IP untuk interface wg-server
-<br>
+<img width="45%" src="https://github.com/user-attachments/assets/e5a810ee-8145-4b4b-bf87-cc2eaec55f93" />
+<br><br>
 
 ![Static Badge](https://img.shields.io/badge/02.%20Buat%20Interface%20WireGuard%20di%20Mikrotik%20Rumah-%230059FF?style=plastic)
 ```Buat Interface WireGuard Mikrotik Rumah
@@ -21,6 +22,8 @@
 - Tambah IP untuk interface wg-home
 - Buat Firewall NAT untuk output interface <b>wg-home</b>
 <br>
+<img width="45%" src="https://github.com/user-attachments/assets/fd092356-59bb-4673-87ca-a4264be25ff1" />
+
 
 ![Static Badge](https://img.shields.io/badge/03.%20Setup%20WireGuard%20di%20Android-%230059FF?style=plastic)<br>
 [Interface]<br>
