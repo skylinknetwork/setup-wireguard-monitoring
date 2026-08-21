@@ -1,10 +1,12 @@
 ![Static Badge](https://img.shields.io/badge/01.%20Buat%20Interface%20WireGuard%20baru%20di%20VPS-%230059FF?style=plastic)<br>
-/interface wireguard add listen-port=64221 name=wg-server;<br>
-/ip address add address=172.16.250.1/24 interface=wg-server;<br>
+```interface wireguard VPS
+/interface wireguard add listen-port=64221 name=wg-server;
+/ip address add address=172.16.250.1/24 interface=wg-server;
+```
 
 ![Static Badge](https://img.shields.io/badge/02.%20Buat%20Interface%20WireGuard%20di%20Mikrotik%20Rumah-%230059FF?style=plastic)<br>
-/interface wireguard add listen-port=51820 name=wg-home;<br>
-/ip address add address=172.16.250.2/24 interface=wg-home;<br>
+`/interface wireguard add listen-port=51820 name=wg-home;`<br>
+`/ip address add address=172.16.250.2/24 interface=wg-home;`<br>
 
 ![Static Badge](https://img.shields.io/badge/Setup%20WireGuard%20di%20Android-%230059FF?style=flat-square)<br>
 [Interface]<br>
@@ -44,9 +46,3 @@ PersistentKeepalive = 30<br>
 > [!CAUTION]
 > Ini bahaya/peringatan keras (otomatis warna **merah**).
 >
-```ansi
-\u001b[31mIni teks warna merah\u001b[0m
-\u001b[32mIni teks warna hijau\u001b[0m
-\u001b[33mIni teks warna kuning\u001b[0m
-\u001b[34mIni teks warna biru\u001b[0m
-```
