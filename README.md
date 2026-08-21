@@ -48,19 +48,3 @@ PersistentKeepalive = 30
 
 ## Buat NAT Masquerade di Mikrotik Rumah untuk monitoring CLIENT
 /ip firewall nat add action=masquerade chain=srcnat comment="Masquerade Wireguard ke Client" out-interface=wg-home
-
-> [!NOTE]
-> Ini catatan penting (otomatis warna **biru**).
-
-> [!TIP]
-> Ini tips keren (otomatis warna **hijau**).
-
-> [!IMPORTANT]
-> Ini info penting banget (otomatis warna **ungu**).
-
-> [!WARNING]
-> Ini peringatan (otomatis warna **kuning**).
-
-> [!CAUTION]
-> Ini bahaya/peringatan keras (otomatis warna **merah**).
->
