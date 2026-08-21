@@ -1,14 +1,24 @@
 ![Static Badge](https://img.shields.io/badge/01.%20Buat%20Interface%20WireGuard%20baru%20di%20VPS-%230059FF?style=plastic)<br>
-```interface wireguard VPS
-/interface wireguard add listen-port=64221 name=wg-server;
+```Buat Interface WireGuard Mikrotik VPS
+/interface wireguard add listen-port=51820 name=wg-server;
 /ip address add address=172.16.250.1/24 interface=wg-server;
 ```
+- Buat interface WireGuard baru di Mikrotik VPS
+- Tambah IP untuk interface wg-server
+<br>
 
-![Static Badge](https://img.shields.io/badge/02.%20Buat%20Interface%20WireGuard%20di%20Mikrotik%20Rumah-%230059FF?style=plastic)<br>
-`/interface wireguard add listen-port=51820 name=wg-home;`<br>
-`/ip address add address=172.16.250.2/24 interface=wg-home;`<br>
+![Static Badge](https://img.shields.io/badge/02.%20Buat%20Interface%20WireGuard%20di%20Mikrotik%20Rumah-%230059FF?style=plastic)
+```Buat Interface WireGuard Mikrotik Rumah
+/interface wireguard add listen-port=51820 name=wg-home;
+/ip address add address=172.16.250.2/24 interface=wg-home;
+/ip fi nat add cha=srcnat out-interface=wg-home act=masq;
+```
+- Buat interface WireGuard baru di Mikrotik Rumah
+- Tambah IP untuk interface wg-home
+- Buat Firewall NAT untuk output interface <b>wg-home</b>
+<br>
 
-![Static Badge](https://img.shields.io/badge/Setup%20WireGuard%20di%20Android-%230059FF?style=flat-square)<br>
+![Static Badge](https://img.shields.io/badge/03.%20Setup%20WireGuard%20di%20Android-%230059FF?style=plastic)<br>
 [Interface]<br>
 PrivateKey = <b>(Klik icon panah memutar di sebelah kanan)</b><br>
 PublicKey = <b>(OTOMATIS TERISI)</b><br>
