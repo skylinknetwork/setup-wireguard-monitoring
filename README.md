@@ -21,9 +21,8 @@
 - Buat interface WireGuard baru di Mikrotik Rumah
 - Tambah IP untuk interface wg-home
 - Buat Firewall NAT untuk output interface <b>wg-home</b>
-<br>
 <img width="45%" src="https://github.com/user-attachments/assets/fd092356-59bb-4673-87ca-a4264be25ff1" />
-
+<br><br>
 
 ![Static Badge](https://img.shields.io/badge/03.%20Setup%20WireGuard%20di%20Android-%230059FF?style=plastic)<br>
 [Interface]<br>
@@ -36,7 +35,8 @@ DNS = <b>(KOSONGKAN_GPP)</b><br>
 PublicKey = <b>(PUBLIC_KEY_VPS)</b><br>
 Endpoint = <b>(IP_PUBLIC_VPS):(PORT)</b><br>
 AllowedIPs = <b>172.16.250.0/24, (IP_POOL_PPPOE), (IP_POOL_HOTSPOT)</b><br>
-PersistentKeepalive = 30
+PersistentKeepalive = 30 <br><br>
+<img width="45%" src="https://github.com/user-attachments/assets/653a9589-03b0-405d-a6a2-41359b4c43c2" />
 <br>
 <br>
 
