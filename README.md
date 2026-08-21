@@ -33,13 +33,16 @@ PersistentKeepalive = 30
 <br>
 <br>
 
-![Static Badge](https://img.shields.io/badge/04.%20Tambahkan%20peer%20menuju%20WireGuard%20rumah%20di%20VPS-%230059FF?style=plastic)<br>
-![Static Badge](https://img.shields.io/badge/Catatan-%23D10000?style=flat-square)![Static Badge](https://img.shields.io/badge/Code%20ini%20untuk%20di%20input%20di%20Mikrotik%20VPS%2C%20Rubah%20PUBLIC_KEY%20_HOME%20dengan%20Public%20Key%20yang%20diambil%20dari%20(Mikrotik%20Rumah)-%23D17300?style=flat-square)
+![Static Badge](https://img.shields.io/badge/04.%20Tambahkan%20peer%20menuju%20WireGuard%20rumah%20di%20Mikrotik%20VPS-%230059FF?style=plastic)<br>
+![Static Badge](https://img.shields.io/badge/Catatan-%23D10000?style=flat-square)![Static Badge](https://img.shields.io/badge/Rubah%20PUBLIC_KEY%20_HOME%20dengan%20Public%20Key%20diambil%20dari%20WireGuard%20(Mikrotik%20Rumah)-%23D17300?style=flat-square)
 <br>
-/interface wireguard peers add interface=wg-server name=wg-peer-home allowed-address=172.16.250.0/24,<IP_POOL_PPPOE>,<IP_POOL_HOTSPOT> public-key="<PUBLIC_KEY_MIKROTIK_RUMAH>"
+```
+/interface wireguard peers add interface=wg-server name=wg-peer-home allowed-address=172.16.250.0/24,<IP_POOL_PPPOE>,<IP_POOL_HOTSPOT> public-key="<PUBLIC_KEY_HOME>"
+```
+<br>
 
-## Tambahkan Peer menuju HP Android di VPS<br>(Masukkan Kode ini di Mikrotik VPS)
-/interface wireguard peers add interface=wg-server name=wg-peer-hp allowed-address=172.16.250.0/24,<IP_POOL_PPPOE>,<IP_POOL_HOTSPOT> public-key="<PUBLIC_KEY_HP_ANDROID>"
+![Static Badge](https://img.shields.io/badge/05.%20Tambahkan%20peer%20menuju%20HP%20Android%20di%20VPS-%230059FF?style=plastic)<br>
+/interface wireguard peers add interface=wg-server name=wg-peer-hp allowed-address=172.16.250.0/24,(IP_POOL_PPPOE),(IP_POOL_HOTSPOT) public-key="(PUBLIC_KEY_HP_ANDROID)"
 
 ## Buat NAT Masquerade di Mikrotik Rumah untuk monitoring CLIENT
 /ip firewall nat add action=masquerade chain=srcnat comment="Masquerade Wireguard ke Client" out-interface=wg-home
