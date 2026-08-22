@@ -44,13 +44,12 @@ PersistentKeepalive = 30 <br><br>
 ```
 {
 /interface wireguard peers add interface=wg-server name=wg-peer-home \
-   allowed-address=172.16.250.0/24,(IP_POOL_PPPOE),(IP_POOL_HOTSPOT) \
-   public-key="(PUBLIC_KEY_HOME)"
+   allowed-address=172.16.250.0/24 public-key="(PUBLIC_KEY_HOME)"
 }
 ```
 ![Static Badge](https://img.shields.io/badge/Catatan-%23D10000?style=flat-square)<br>
 ![Static Badge](https://img.shields.io/badge/Rubah%20PUBLIC_KEY%20_HOME%20dengan%20Public%20Key%20diambil%20dari%20WireGuard%20(Mikrotik%20Rumah)-%23D17300?style=flat-square)<br>
-![Static Badge](https://img.shields.io/badge/Rubah%20IP_POOL_PPPOE%20dan%20HOTSPOT%20Sesuai%20IP%20Pool%20Client%20yang%20ada%20di%20Mikrotik%20Rumah-%23D17300?style=flat-square)
+<img width="45%" src="https://github.com/user-attachments/assets/53b5164e-b680-4848-8658-bfe1238918f1" />
 <br>
 <br>
 
