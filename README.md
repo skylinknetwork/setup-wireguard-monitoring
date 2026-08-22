@@ -68,25 +68,15 @@ PersistentKeepalive = 30 <br><br>
 ![Static Badge](https://img.shields.io/badge/Rubah%20PUBLIC_KEY%20_HP%20dengan%20Public%20Key%20diambil%20dari%20WireGuard%20(HP)-%23D17300?style=flat-square)<br>
 ![Static Badge](https://img.shields.io/badge/Rubah%20IP_POOL_PPPOE%20dan%20HOTSPOT%20Sesuai%20IP%20Pool%20Client%20yang%20ada%20di%20Mikrotik%20Rumah-%23D17300?style=flat-square)<br>
 <img width="45%" alt="005" src="https://github.com/user-attachments/assets/3336091d-c34d-422d-83ed-9cd18a4932b0" />
-
 <br>
 <br>
 
-![Static Badge](https://img.shields.io/badge/06.%20Buat%20NAT%20Masquerade%20di%20Mikrotik%20Rumah-%230059FF?style=plastic)<br>
-```
-{
-/ip firewall nat add action=masquerade chain=srcnat \
-   out-interface=wg-home
-}
-```
-<br>
-
-![Static Badge](https://img.shields.io/badge/07.%20Tambahkan%20peer%20menuju%20VPS%20di%20Mikrotik%20Rumah-%230059FF?style=plastic)<br>
+![Static Badge](https://img.shields.io/badge/06.%20Tambahkan%20peer%20menuju%20VPS%20di%20Mikrotik%20Rumah-%230059FF?style=plastic)<br>
 ```
 {
 /interface wireguard peer add name=peer-vps interface=wg-home \
    public-key="PUBLIC_KEY_VPS" endpoint-addr=(IP_PUBLIK_VPS) \
-   endpoint-port=51820 allowed-address=172.16.251.0/24 persistent=20
+   endpoint-port=51820 allowed-address=172.16.250.0/24 persistent-keepalive=20
 }
 ```
 <br>
