@@ -40,16 +40,19 @@ PersistentKeepalive = 30 <br><br>
 <br>
 <br>
 
+<!-- TAMBAH PEER MENUJU WIREGUARD RUMAH DI MIKROTIK VPS -->
 ![Static Badge](https://img.shields.io/badge/04.%20Tambahkan%20peer%20menuju%20WireGuard%20rumah%20di%20Mikrotik%20VPS-%230059FF?style=plastic)<br>
 ```
 {
 /interface wireguard peers add interface=wg-server name=wg-peer-home \
-   allowed-address=172.16.250.0/24 public-key="(PUBLIC_KEY_HOME)"
+   allowed-address=172.16.250.0/24,(IP_POOL_PPPOE),(IP_POOL_HOTSPOT) \
+   public-key="(PUBLIC_KEY_HOME)"
 }
 ```
 ![Static Badge](https://img.shields.io/badge/Catatan-%23D10000?style=flat-square)<br>
 ![Static Badge](https://img.shields.io/badge/Rubah%20PUBLIC_KEY%20_HOME%20dengan%20Public%20Key%20diambil%20dari%20WireGuard%20(Mikrotik%20Rumah)-%23D17300?style=flat-square)<br>
-<img width="45%" src="https://github.com/user-attachments/assets/53b5164e-b680-4848-8658-bfe1238918f1" />
+![Static Badge](https://img.shields.io/badge/Rubah%20IP_POOL_PPPOE%20dan%20HOTSPOT%20Sesuai%20IP%20Pool%20Client%20yang%20ada%20di%20Mikrotik%20Rumah-%23D17300?style=flat-square)<br>
+<img width="45%" alt="004" src="https://github.com/user-attachments/assets/45d36f79-9486-47a4-86e6-3a5eece42eb5" />
 <br>
 <br>
 
@@ -63,7 +66,9 @@ PersistentKeepalive = 30 <br><br>
 ```
 ![Static Badge](https://img.shields.io/badge/Catatan-%23D10000?style=flat-square)<br>
 ![Static Badge](https://img.shields.io/badge/Rubah%20PUBLIC_KEY%20_HP%20dengan%20Public%20Key%20diambil%20dari%20WireGuard%20(HP)-%23D17300?style=flat-square)<br>
-![Static Badge](https://img.shields.io/badge/Rubah%20IP_POOL_PPPOE%20dan%20HOTSPOT%20Sesuai%20IP%20Pool%20Client%20yang%20ada%20di%20Mikrotik%20Rumah-%23D17300?style=flat-square)
+![Static Badge](https://img.shields.io/badge/Rubah%20IP_POOL_PPPOE%20dan%20HOTSPOT%20Sesuai%20IP%20Pool%20Client%20yang%20ada%20di%20Mikrotik%20Rumah-%23D17300?style=flat-square)<br>
+<img width="45%" alt="005" src="https://github.com/user-attachments/assets/3336091d-c34d-422d-83ed-9cd18a4932b0" />
+
 <br>
 <br>
 
@@ -85,6 +90,7 @@ PersistentKeepalive = 30 <br><br>
 }
 ```
 <br>
+
 ![Static Badge](https://img.shields.io/badge/Catatan-%23D10000?style=flat-square)<br>
 ![Static Badge](https://img.shields.io/badge/Rubah%20PUBLIC_KEY%20_VPS%20dengan%20Public%20Key%20diambil%20dari%20WireGuard%20VPS-%23D17300?style=flat-square)<br>
 <br>
