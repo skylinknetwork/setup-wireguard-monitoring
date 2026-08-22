@@ -60,8 +60,7 @@ PersistentKeepalive = 30 <br><br>
 ```
 {
 /interface wireguard peers add interface=wg-server name=wg-peer-hp \
-   allowed-address=172.16.250.0/24,(IP_POOL_PPPOE),(IP_POOL_HOTSPOT) \
-   public-key="(PUBLIC_KEY_HP)"
+   allowed-address=172.16.250.0/24 public-key="(PUBLIC_KEY_HP)"
 }
 ```
 ![Static Badge](https://img.shields.io/badge/Catatan-%23D10000?style=flat-square)<br>
