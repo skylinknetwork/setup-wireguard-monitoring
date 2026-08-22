@@ -15,7 +15,7 @@
 {
 /interface wireguard add listen-port=51820 name=wg-home;
 /ip address add address=172.16.250.2/24 interface=wg-home;
-/ip fi nat add cha=srcnat out-interface=wg-home act=masq;
+/ip firewall nat add chain=srcnat action=masquerade;
 }
 ```
 - Buat interface WireGuard baru di Mikrotik Rumah
@@ -65,7 +65,6 @@ PersistentKeepalive = 30 <br><br>
 ```
 ![Static Badge](https://img.shields.io/badge/Catatan-%23D10000?style=flat-square)<br>
 ![Static Badge](https://img.shields.io/badge/Rubah%20PUBLIC_KEY%20_HP%20dengan%20Public%20Key%20diambil%20dari%20WireGuard%20(HP)-%23D17300?style=flat-square)<br>
-![Static Badge](https://img.shields.io/badge/Rubah%20IP_POOL_PPPOE%20dan%20HOTSPOT%20Sesuai%20IP%20Pool%20Client%20yang%20ada%20di%20Mikrotik%20Rumah-%23D17300?style=flat-square)<br>
 <img width="45%" alt="005" src="https://github.com/user-attachments/assets/3336091d-c34d-422d-83ed-9cd18a4932b0" />
 <br>
 <br>
